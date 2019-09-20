@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "authors": [
+    "Felipe  Damaceno Teodoro <felipe.teodoro@abgf.gov.br>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "blueimp-file-upload": "jquery-file-upload#^9.19.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
+  }
+}

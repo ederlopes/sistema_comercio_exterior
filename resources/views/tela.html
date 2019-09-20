@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ABGF - Sistema de Garantias Públicas (Módulo Cliente - Defesa)</title>
+    <link rel="shortcut icon" href="imagens/Favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.js?v=1.11.2"></script>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.FancyBox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.MaskedInput.js?v=1.3.1"></script>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.MaskBrPhone.js?v=1.1"></script>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.autoNumeric.js?v=2.0"></script>
+    <script type="text/javascript" src="./inclusoes/js/jQuery.CrossBrowser.IE7.js?v=1.5"></script>
+    <script type="text/javascript" src="./inclusoes/js/asn.js"></script>
+
+    <link href="./inclusoes/css/jQuery.FancyBox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+    <!-- Última versão CSS compilada e minificada -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="./inclusoes/css/Principal.css?v=1.5" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="IndexHeader" class="Centro ClearFix">
+        <div class="LogoSGP">
+            <img src="./imagens/IndexSGPLogo.gif" alt="SGP"/>
+        </div>
+        <div class="LogoABGF">
+            <img src="./imagens/IndexABGFLogo.gif" alt="SGP"/>
+        </div>
+    </div>
+
+    <div id="IndexSite" class="Centro">
+        <div class="Conteudo">
+            <h1>CONTROLE DE SINISTROS <span class="MensagemTitulo"></span></h1>
+            <div class="Form01">
+                <div class="table-responsive">
+                    <table class="table borderless" style="width: 200px;">
+                        <tr>
+                            <th style="border: none">Name:</th>
+                            <td style="border: none">Bill Gates</td>
+                        </tr>
+                        <tr>
+                            <th style="border: none">Telephone:</th>
+                            <td style="border: none">555 77 854</td>
+                        </tr>
+                        <tr>
+                            <th style="border: none">Telephone:</th>
+                            <td style="border: none">555 77 855</td>
+                        </tr>
+                        <tr>
+                            <th style="border: none">Telephone:</th>
+                            <td style="border: none">555 77 855</td>
+                        </tr>
+                        <tr>
+                            <th style="border: none">Telephone:</th>
+                            <td style="border: none">555 77 855</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Nº Operação</th>
+                            <th>Devedor - Pós-Embarque</th>
+                            <th>País</th>
+                            <th>Dt. Envio do C. Exportação</th>
+                            <th>Dt. Concessão do crédito</th>
+                            <th>Nº Fatura Comercial</th>
+                            <th>Nº Re ou RVS</th>
+                            <th>Dt. Vencimento</th>
+                            <th>Moeda</th>
+                            <th>Valor Concretizado</th>
+                            <th>Valor do Financ./concessão do Crédito</th>
+                            <th>Valor Coberto</th>
+                            <th>% de cobertura</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                            <td>def@somemail.com</td>
+                            <td>def@somemail.com</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table borderless" style="width: 200px;">
+                        <tr>
+                            <th style="border: none">MPME (Razão Social):</th>
+                            <td style="border: none">XXXXXXXXXXXXXXXXXXXX</td>
+                        </tr>
+                        <tr>
+                            <th style="border: none">Nome do Banco Financiador:</th>
+                            <td style="border: none">XXXXXXXXXXXXXXXXXXXX</td>
+                        </tr>
+                    </table>
+                </div>
+                <form class="form-inline">
+
+
+                    <div class="row" style="margin-left: 10px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data da Declaração de Ameaça de Sinistro:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 10px;">
+                            <label for="check01">Data de Cancelamento da Declaração de Ameaça de Sinistro:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+                        <div class="form-group" style="margin-left: 10px;">
+                            <label for="check01">Motivo do cancelamento:</label>
+                            <select class="form-control">
+                                <option>Selecione</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <!-- fecha row 01     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data de envio da Carta de Cobrança:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 37px;">
+                        </div>
+
+                    </div>
+                    <!-- fecha row 02     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data de envio do parecer técnico á Sain:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 15px;">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 10px;">
+                            <button type="button" class="btn btn-default"><i
+                                    class="glyphicon glyphicon-floppy-disk"></i> Upload
+                            </button>
+
+                        </div>
+                        <div class="form-group" style="margin-left: 17px;">
+                            <label for="check01">Data de Cancelamento do parecer técnico:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+                    </div>
+                    <!-- fecha row 03     -->
+
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data da DS/PI.:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 160px;">
+                        </div>
+
+                    </div>
+                    <!-- fecha row 04     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Fato gerador do simistro:</label>
+                            <select class="form-control" style="margin-left: 100px;">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <!-- fecha row 05     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Regulação de sinistro - DECISÃO:</label>
+                            <select class="form-control" style="margin-left: 50px;">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-left: 75px;">
+                            <label for="check01">em:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+                        <div class="form-group" style="margin-left: 27px;">
+                            <label for="check01">Motivo da revogação:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+                        <div class="form-group" style="margin-left: 75px;">
+                            <label for="check01">Revogada em:</label>
+                            <select class="form-control">
+                                <option>Selecione</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <!-- fecha row 06     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data de caracterização do sinistro:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 46px;">
+                        </div>
+
+
+                    </div>
+                    <!-- fecha row 07     -->
+
+                    <hr>
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Pagamento em atraso:</label>
+                            <div class="row" style="margin-left:50px;">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email"> Data Pagto</label><br>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email"> Valor</label><br>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- fecha row 08     -->
+                    <hr>
+
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data de envio de comunicado de indenização ao Gestor do FGE:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+                        </div>
+
+                    </div>
+                    <!-- fecha row 09     -->
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data de pagamento da indenização:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 165px;">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 100px;">
+                            <label for="check01">Valor Indenizado:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+
+                    </div>
+                    <!-- fecha row 10     -->
+
+
+                    <div class="row" style="margin-left: 10px; margin-top:5px;">
+                        <div class="form-group">
+                            <input type="checkbox" id="check01">
+                            <label for="email">Data da Assinatura de contrato de renegociação:</label>
+                            <input type="text" id="text01" class="form-control input-sm" style="margin-left: 90px;">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 100px;">
+                            <label for="check01">Valor repactuado:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+                        <div class="form-group" style="margin-left: 27px;">
+                            <label for="check01">Nº de parcelas:</label>
+                            <input type="text" id="text01" class="form-control input-sm">
+
+                        </div>
+
+
+                    </div>
+                    <!-- fecha row 09     -->
+
+                    <br><br><br><br>
+                    <!--tabela-->
+                    <div class="table-responsive">
+                        <table class="table">
+
+                            <tr>
+                                <td>Recuperações</td>
+                                <td>Valor a recuperar: </td> <td>xxxx-xxxx-xxx</td>
+                                <td>Valor já recuperado: </td> <td>xxxx-xxxx-xxx</td>
+                                <td>Saldo Devedor: </td> <td>xxxx-xxxx-xxx</td>
+
+
+                            </tr>
+
+
+                        </table>
+                    </div>
+                    <!--fecha tabela-->
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Data Prevista</th>
+                                <th>Principal</th>
+                                <th>Juros</th>
+                                <th>Data Efetiva</th>
+                                <th>Valor Pago</th>
+                                <th>Observações</th>
+                                <th></th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="">
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td><input type="text" id="text01" class="form-control input-sm"></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--fecha tabela-->
+
+                </form>
+                <br><br>
+                <div id="IndexBotoes" class="Centro ClearFix">
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-floppy-disk"></i> Salvar
+                    </button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i>
+                        Voltar
+                    </button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-backward"></i> Voltar ao
+                        menu
+                    </button>
+
+                </div>
+
+            </div> <!-- Fim div Form01 -->
+
+        </div>
+    </div>
+
+
+    <div id="IndexFooter" class="Centro ClearFix">
+        <div class="Copy">
+            &copy; Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - 2017. Módulo Sinistros: 1.0
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

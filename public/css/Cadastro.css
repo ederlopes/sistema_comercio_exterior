@@ -1,0 +1,201 @@
+@charset "UTF-8";
+* {
+	box-sizing:border-box !important;
+	outline:none;
+	-moz-box-sizing:border-box !important;
+}
+html,
+body {
+	color:#333;
+	margin:0;
+	font-size:14px;
+	background-color:#c2c8d3;
+	font-family:"Open Sans", Arial, Helvetica, sans-serif;
+}
+input.text-uppercase::placeholder {
+	text-transform:none;
+}
+div.alert.single {
+	margin-bottom:0;
+}
+
+div#Logo {
+	margin:20px 0;
+}
+
+div#Carregando {
+	background-color:rgba(255,255,255,0.7);
+	display:none;
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1000;
+}
+
+div.panel {
+	border:none;
+}
+div.panel>div.panel-heading {
+	background-color:#243268;
+	border:none;
+	color:#FFF;
+	font-size:18px;
+	padding:15px 20px;
+}
+
+div#Cadastro div.navbar {
+	margin-bottom: 5px;
+}
+div#Cadastro div.navbar ul>li+li {
+	margin: 0;
+}
+div#Cadastro div.navbar ul>li>a {
+	color:#333;
+	text-decoration:none;
+}
+div#Cadastro div.navbar ul>li.active>a {
+	background:none;
+}
+div#Cadastro div.navbar ul>li>a>figure {
+	background-color:#DADADA;
+	border-radius:100%;
+	height:48px;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	line-height:48px;
+	text-align:center;
+	width:48px;
+}
+div#Cadastro div.navbar ul>li.active>a>figure {
+	background-color:#243268;
+	color:#FFF;
+}
+div#Cadastro div.navbar ul>li>a>span {
+	float:left;
+	line-height:48px;
+	margin-left:10px;
+}
+
+div#Cadastro ul.pager>li.disabled>a {
+	opacity:.65;
+}
+div#Cadastro ul.pager>li.previous>a {
+	color:#fff;
+	background-color:#5bc0de;
+	border-color:#46b8da;
+}
+div#Cadastro ul.pager>li.next>a {
+	color:#fff;
+	background-color:#337ab7;
+	border-color:#2e6da4;
+}
+div#Cadastro ul.pager>li.finish {
+	float:right;
+}
+div#Cadastro ul.pager>li.finish>a {
+	color:#fff;
+	background-color:#5cb85c;
+	border-color:#4cae4c;
+}
+
+div#Cadastro div.tab-content>div.tab-pane {
+	padding:10px 10px 0 10px;
+}
+div#Cadastro div.tab-content>div.tab-pane div.page-header {
+	margin:0 0 15px 0;
+}
+div#Cadastro div.tab-content>div.tab-pane div.page-header h2 {
+	margin:0;
+}
+div#Cadastro div.tab-content>div.tab-pane div.page-header h2>small {
+	font-size:16px;
+}
+
+div#Cadastro form span.required {
+	color:#F00;
+}
+div#Cadastro form div.form-group.has-error input {
+	color:#a94442;
+}
+div#Cadastro form div.form-group.has-success input {
+	color:#3c763d;
+}
+div#Cadastro form div.form-group div.mensagem {
+	display:none;
+}
+div#Cadastro form div.form-group.has-error div.mensagem,
+div#Cadastro form div.form-group.has-success div.mensagem {
+	display:block;
+}
+div#Cadastro form div.form-group div.mensagem div.alert {
+	margin:5px 0 0 0;
+	padding:6px 12px;
+}
+div#Cadastro form div.form-group .help-block {
+	margin-bottom:0;
+}
+
+div#Cadastro form div.divisao-form h3 {
+	margin:0 0 15px 15px;
+}
+div#Cadastro form div.divisao-form+div.divisao-form {
+	border-top:1px solid #CCC;
+	padding-top:15px;
+}
+
+/* Carregando */
+@keyframes lds-eclipse {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes lds-eclipse {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.lds-eclipse {
+    position: relative;
+	margin:auto;
+	top:calc(50vh - 120px);
+}
+.lds-eclipse div {
+    position: absolute;
+    -webkit-animation: lds-eclipse 1.2s linear infinite;
+    animation: lds-eclipse 1.2s linear infinite;
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 0 #243268;
+    -webkit-transform-origin: 80px 82px;
+    transform-origin: 80px 82px;
+}
+.lds-eclipse {
+    width: 200px !important;
+    height: 200px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}

@@ -1,0 +1,82 @@
+/*
+ * Bite Checkbox v1.0.0-alpha
+ * Copyright 2018
+ * Authors:
+ *		Douglas Ferreira da Cunha
+ */
+
+
+.bite-checkbox.inline {
+	display:inline-block;
+}
+.bite-checkbox.inline+.bite-checkbox.inline {
+	margin-left:5px;
+}
+.bite-checkbox>input {
+	display:none;
+}
+.bite-checkbox>label {
+	cursor:pointer;
+	display:inline-block;
+	line-height:17px;
+	margin:0;
+	padding-left:22px;
+	position:relative;
+	width:100%;
+}
+.bite-checkbox>input:disabled+label {
+	opacity:0.65;
+}
+.bite-checkbox>label::before {
+	background-color:#FFF;
+	content:'';
+	cursor:pointer;
+	border:1px solid rgba(0, 0, 0, 0.15);
+	display:block;
+	height:17px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:17px;
+}
+.bite-checkbox>input:disabled+label::before {
+	background-color:#e9ecef;
+    cursor:not-allowed;
+}
+.bite-checkbox>label::after {
+	content:'\f00c';
+	color:#000;
+	cursor:pointer;
+	display:none;
+	font:normal normal normal 13px/1 FontAwesome;
+	height:17px;
+	left:0;
+	line-height:17px;
+	position:absolute;
+	text-align:center;
+    text-rendering:auto;
+    top:0;
+    width:17px;
+    -webkit-font-smoothing:antialiased;
+}
+.bite-checkbox>input:checked+label::after {
+	display:block;
+}
+
+.bite-checkbox>input[type='checkbox']+label::before {
+	border-radius:3px;
+}
+.bite-checkbox>input[type='radio']+label::before {
+	border-radius:100%;
+}
+.bite-checkbox>input[type='radio']+label::after {
+	background-color:#333;
+	border-radius:100%;
+	content:'';
+	color:inherit;
+	font:inherit;
+	height:7px;
+	margin:5px;
+	top:0;
+	width:7px;
+}

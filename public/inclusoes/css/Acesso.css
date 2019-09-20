@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* Página de Estilo da Tela "Acesso" */
+/* Versão: 2.6 */
+
+* {
+	box-sizing:border-box !important;
+	outline:none;
+	-moz-box-sizing:border-box !important;
+}
+body {
+	background:url('../../imagens/IndexFundo01.jpg') repeat-x #CCC;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+.Centro {
+	margin:auto;
+	width:780px;
+}
+.ClearFix:after {
+	clear:both;
+	content:'';
+	display:block;
+}
+.Clear {
+	clear:both;
+	line-height:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5 {
+	margin:0;
+	padding:0;
+}
+.None {
+	display:none;
+}
+.Block {
+	display:block;
+}
+a {
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover {
+	color:#666;
+}
+
+/* Cabeçalho */
+div#IndexHeader {
+	background:url(../../imagens/IndexGlobo.jpg) no-repeat center;
+	height:266px;
+	width:100%;
+}
+
+/* Botões */
+.Botao {
+	cursor:pointer;
+	line-height:18px;
+	outline:none;
+	padding:2px 12px;
+	text-decoration:none;
+}
+.Botao01 {
+	background:url('../../imagens/Botao01.gif') top;
+	border:1px solid #808080;
+	border-radius:20px;
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	margin-right:10px;
+}
+.Botao01:hover {
+	background:url('../../imagens/Botao01.gif') bottom;	
+	color:#000;
+}
+
+/* Formulários */
+div.Form01 form div.Campo {
+	float:left;
+	width:220px;
+}
+div.Form01 form div.Campo label {
+	float:left;
+	font-weight:bold;
+	line-height:15px;
+	margin-right:5px;
+	padding:5px 0 0 0;
+	text-align:right;
+	width:50px;
+}
+div.Form01 form div.Campo input[type=text], div.Form01 form div.Campo input[type=password], div.Form01 form div.Campo textarea, div.Form01 form div.Campo select {
+	background:#FFF;
+	border:1px solid #DADADA;
+	border-radius:4px;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	color:#555;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	float:left;
+	margin:0;
+	outline:none;
+	padding:3px 7px;
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	width:165px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+div.Form01 form div.Campo input[type=text]:focus, div.Form01 form div.Campo input[type=password]:focus, div.Form01 form div.Campo textarea:focus {
+	border:1px solid #999;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 2px rgba(83,99,135,0.5);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 2px rgba(83,99,135,0.5);
+}
+div.Form01 form div.Campo input[type=checkbox] {
+	float:left;
+	margin-top:5px;
+}
+div.Form01 form div.Tel input.DDD {
+	width:50px;
+}
+div.Form01 form div.Tel input.Telefone {
+	margin-left:10px;
+	width:100px;
+}
+
+div.Form01 div.Campo div.Radios {
+	float:left;
+	width:72%;	
+}
+div.Form01 div.Campo div.Radios div.Radio {
+	float:left;
+	margin-right:10px;
+}
+div.Form01 div.Campo div.Radios div.Radio:after {
+	clear:both;
+	content:'';
+	display:block;
+}
+div.Form01 div.Campo div.Radio input[type=radio],div.Form01 div.Campo div.Radio input[type=checkbox] {
+	height:22px;
+	float:left;
+	width:auto !important;
+}
+div.Form01 div.Campo div.Radio label {
+	height:22px;
+	float:left;
+	font-weight:normal;
+	line-height:14px;
+	text-align:left;
+	margin:0 5px;
+	width:auto !important;	
+}
+div.Form01 form.Form02 div.Campo label {
+	width:35%;
+}
+div.Form01 form.Form02 div.Campo input[type=text], div.Form01 form.Form02 div.Campo input[type=password], div.Form01 form.Form02 div.Campo textarea, div.Form01 form.Form02 div.Campo select {
+	width:63%;
+}
+div.Form01 form.Form02 div.Campo div.Radios {
+	width:63%;
+}
+div.Form01 form.Form02 div.Campo4 input[type=text], div.Form01 form.Form02 div.Campo4 input[type=password], div.Form01 form.Form02 div.Campo4 textarea, div.Form01 form.Form02 div.Campo4 select {
+	margin-top:1%;
+}
+div.Form01 form input[type=submit] {
+	float:left;
+	margin-left:15px;
+	width:60px
+}
+
+/* Validação de formulários */
+div.Form01 form div.Campo input.Erro, div.Form01 form div.Campo select.Erro, div.Form01 form div.Campo textarea.Erro {
+	border:1px solid #ed5466;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 2px #ed5466;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 2px #ed5466;
+}
+div.Form01 form div.Campo span.Erro {
+	color:#ed5466;
+	clear:both;
+	display:none;
+	margin:2px 0 0 28%;
+	width:72%
+}
+div.Form01 form span.Erro2 {
+	color:#ed5466;
+	clear:both;
+	display:none;
+	margin:2px 0 0 0;
+	text-align:center;
+	width:100%
+}
+div.Form01 form.Form02 div.Campo span.Erro {
+	margin-left:37%;
+	width:63%;
+}
+
+/* Estrutura do site */
+div#IndexSite {
+	background:url('../../imagens/IndexFundo02.gif');
+	border-top:1px solid #FFF;
+	border-left:1px solid #FFF;
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+	border-radius:5px;
+	padding:10px;
+}
+div#IndexSite div.Conteudo {
+	background:#F2F2E6;
+	border:1px solid #808080;
+	border-radius:3px;
+}
+div#IndexSite div.Conteudo+div.Conteudo {
+	margin-top:7px;
+}
+div#IndexSite div.Conteudo h1 {
+	background:url('../../imagens/TituloFundo01.gif') center repeat-x;
+	border-bottom:1px solid #808080;
+	border-radius:5px 5px 0 0;
+	font-size:20px;
+	padding:5px 8px;
+	position:relative;
+	text-shadow:1px 1px 1px rgba(255,255,255,0.9);
+}
+div#IndexSite div.Conteudo div.Form01 {
+	padding:10px;
+}
+
+/* Conteúdos */
+div#IndexSite div#Cadastro span {
+	float:left;
+	line-height:24px;
+}
+div#IndexSite div#Cadastro a {
+	float:right;
+}
+div#IndexSite div#Login form {
+	margin:auto;
+	width:525px;
+}
+div#IndexSite div#Login form div.Campo input.Login {
+	text-transform:uppercase;
+}
+div#IndexSite div#Login form div.Campo a.Recuperar {
+	float:right;
+	margin-top:2px;
+}
+
+/* Rodapé */
+div#IndexFooter div.Copy {
+	padding:15px 0;
+	text-align:center;
+}

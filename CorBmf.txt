@@ -1,0 +1,79 @@
+1;001-Magliano
+2;002-Souza Barros
+3;003-XP
+4;004-Alfa
+8;008-UBS
+9;009-Deutsche
+10;010-Spinelli
+13;013-Merrill
+14;014-Cruzeiro do Sul
+15;015-Guide
+16;016-JP Morgan
+21;021-Votorantim
+23;023-Necton
+27;027-Santander
+33;033-Lerosa
+34;034-Schahin
+37;037-UM
+39;039-Agora
+40;040-Morgan
+41;041-ING
+45;045-C Suisse
+47;047-Solidez
+51;051-Citigroup
+54;054-Haitong
+57;057-Brascan
+58;058-Socopa
+59;059-Safra
+63;063-Novinvest
+70;070-HSBC
+72;072-Bradesco
+74;074-Coin
+76;076-Interbolsa
+77;077-Citigroup
+82;082-TOV
+83;083-Maxima
+85;085-BTG
+86;086-Walpires
+88;088-Capital
+90;090-Titulo
+92;092-Renascenca
+93;093-Nova Futura
+94;094-Pioneer CM
+95;095-Hedging Griffo
+98;098-Alpes
+99;099-Tendencia
+102;102-Banif
+104;104-Distribuidora Intercap
+105;105-FDR
+107;107-Terra
+110;110-SLW
+114;114-Itau
+115;115-Commcor
+119;119-BTG
+120;120-Genial
+122;122-BGC
+127;127-Tullett
+129;129-Planner
+131;131-Fator
+133;133-Dibran
+147;147-Ativa
+150;150-Prosper
+175;175-Omar Camargo
+227;227-Gradual
+237;237-Oliveira Franco
+238;238-Goldman
+239;239-Interfloat
+262;262-Mirae
+265;265-BTG
+298;298-CitiBank
+308;308-Clear
+336;336-BR Partners
+386;386-Rico
+735;735-ICAP
+1099;1099-Inter
+1130;1130-FC Stone
+1618;1618-Ideal
+1982;1982-Modal
+3701;3701-Orama
+4090;4090-Toro
